@@ -1,0 +1,9 @@
+name = "mymbti-game"
+compatibility_date = "2024-02-07"
+
+[build]
+command = "npm run build"
+watch_dir = "src"
+
+[site]
+bucket = "./dist"
