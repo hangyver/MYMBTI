@@ -14,26 +14,36 @@ function App() {
   const [resultMBTI, setResultMBTI] = useState('');
   const [questionList, setQuestionList] = useState(questions);
 
+  // Fisher-Yates Shuffle
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+
   const handleStart = () => {
     // 1. Group questions by type
     const groups = { EI: [], SN: [], TF: [], JP: [] };
     questions.forEach(q => {
-      // Find the type from the first option (assuming both options have the same type)
       const type = q.options[0].type;
       if (groups[type]) groups[type].push(q);
     });
 
-    // 2. Pick 2 random questions from each group
+    // 2. Pick 2 unique random questions from each group
     let selectedQuestions = [];
     ['EI', 'SN', 'TF', 'JP'].forEach(type => {
-      const shuffledGroup = [...groups[type]].sort(() => Math.random() - 0.5);
+      // Shuffle the entire group first to ensure random selection
+      const shuffledGroup = shuffleArray([...groups[type]]);
+      // Take the first 2
       selectedQuestions.push(...shuffledGroup.slice(0, 2));
     });
 
-    // 3. Shuffle the final list of 8 questions
-    selectedQuestions.sort(() => Math.random() - 0.5);
+    // 3. Shuffle the final list of 8 questions so types are mixed
+    const finalQuestions = shuffleArray(selectedQuestions);
 
-    setQuestionList(selectedQuestions);
+    setQuestionList(finalQuestions);
     setStep('quiz');
     setCurrentQuestionIndex(0);
     setScores({ E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 });
