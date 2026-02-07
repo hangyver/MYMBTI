@@ -152,6 +152,116 @@ export const questions = [
       { text: "우선순위에 따라 체계적으로 하나씩 끝낸다. (계획적)", type: "JP", value: "J" },
       { text: "마감 시간이 다가올수록 집중력이 올라가서 확 끝낸다. (임박형)", type: "JP", value: "P" }
     ]
+  },
+  {
+    id: 15,
+    title: "조선시대 선비",
+    image: "/images/scenario_bookstore.png",
+    story: "당신은 조선시대의 선비다. 과거 시험이 코앞인데 라이벌이 찾아와 술 한잔 하자고 한다.",
+    question: "당신의 선택은?",
+    options: [
+      { text: "마음을 다잡고 정중히 거절한 후 공부에 집중한다. (목표 지향)", type: "JP", value: "J" },
+      { text: "술 한잔 정도는 머리 식히는 데 좋지! 풍류를 즐긴다. (여유 지향)", type: "JP", value: "P" }
+    ]
+  },
+  {
+    id: 16,
+    title: "로마 원로원 회의",
+    image: "/images/scenario_presentation.png",
+    story: "당신은 고대 로마의 원로원 의원이다. 격렬한 토론이 벌어지고 있다.",
+    question: "당신의 행동은?",
+    options: [
+      { text: "논리적인 화술로 상대방의 허점을 찌르며 주장을 펼친다. (분석적)", type: "TF", value: "T" },
+      { text: "사람들의 감정에 호소하며 지지를 이끌어낸다. (호소력)", type: "TF", value: "F" }
+    ]
+  },
+  {
+    id: 17,
+    title: "그리스 신화의 제우스",
+    image: "/images/scenario_rain.png",
+    story: "당신은 제우스다. 인간들이 제물을 바치지 않아 화가 났다.",
+    question: "어떻게 벌을 내릴까?",
+    options: [
+      { text: "번개를 내리쳐 본보기를 보인다! 즉각적인 응징! (행동파)", type: "EI", value: "E" },
+      { text: "꿈에 나타나 엄중히 경고하고 지켜본다. (신중파)", type: "EI", value: "I" }
+    ]
+  },
+  {
+    id: 18,
+    title: "지브리 세상의 비행",
+    image: "/images/scenario_camping.png",
+    story: "당신은 마법 빗자루를 타고 하늘을 날고 있다. 아래에는 평화로운 마을이 보인다.",
+    question: "어떤 상상을 하는가?",
+    options: [
+      { text: "바람의 속도가 시원하다. 저 집 지붕 색깔 예쁘네. (감각적)", type: "SN", value: "S" },
+      { text: "저 구름 너머에는 뭐가 있을까? 다른 세상으로 가는 문일까? (직관적)", type: "SN", value: "N" }
+    ]
+  },
+  {
+    id: 19,
+    title: "마블 히어로의 등장",
+    image: "/images/scenario_karaoke.png",
+    story: "빌런이 도시를 파괴하고 있다. 당신은 슈퍼히어로다.",
+    question: "어떻게 등장할 것인가?",
+    options: [
+      { text: "화려한 착지와 함께 멋진 대사를 날리며 등장! (관종형 히어로)", type: "EI", value: "E" },
+      { text: "그림자 속에 숨어 있다가 결정적인 순간에 기습한다. (다크 히어로)", type: "EI", value: "I" }
+    ]
+  },
+  {
+    id: 20,
+    title: "사이버펑크 해커",
+    image: "/images/scenario_party.png",
+    story: "네온 사인이 가득한 2077년, 당신은 기업의 기밀 정보를 해킹했다.",
+    question: "이 정보를 어떻게 할까?",
+    options: [
+      { text: "돈을 가장 많이 주는 곳에 판다. 이득이 최고지. (실리 추구)", type: "TF", value: "T" },
+      { text: "세상의 정의를 위해 인터넷에 무료로 공개한다. (가치 추구)", type: "TF", value: "F" }
+    ]
+  },
+  {
+    id: 21,
+    title: "중세시대 드래곤",
+    image: "/images/scenario_lost.png",
+    story: "던전 깊은 곳에서 전설의 드래곤과 마주쳤다.",
+    question: "당신의 첫 반응은?",
+    options: [
+      { text: "검을 뽑고 약점이 어디인지 관찰한다. (현실적 대응)", type: "SN", value: "S" },
+      { text: "드래곤과 대화가 통하지 않을까? 전설 속 이야기를 떠올린다. (상상력)", type: "SN", value: "N" }
+    ]
+  },
+  {
+    id: 22,
+    title: "서부의 무법자",
+    image: "/images/scenario_work.png",
+    story: "황야의 무법자가 되어 현상수배범을 쫓고 있다. 갈림길이 나왔다.",
+    question: "어느 길로 갈까?",
+    options: [
+      { text: "미리 조사해둔 지도를 보고 확실한 길로 간다. (계획적)", type: "JP", value: "J" },
+      { text: "말발굽 자국이 희미하게 보이는 쪽으로 느낌을 믿고 간다. (유동적)", type: "JP", value: "P" }
+    ]
+  },
+  {
+    id: 23,
+    title: "느와르 탐정",
+    image: "/images/scenario_rain.png",
+    story: "비 내리는 밤, 의문의 의뢰인이 사무실을 찾아왔다.",
+    question: "사건을 맡으면서 가장 먼저 하는 생각은?",
+    options: [
+      { text: "의뢰비는 얼마지? 사건의 승산은 있나? (이성적 판단)", type: "TF", value: "T" },
+      { text: "저 사람의 눈빛이 너무 슬퍼 보여. 무슨 사연일까? (감성적 접근)", type: "TF", value: "F" }
+    ]
+  },
+  {
+    id: 24,
+    title: "우주선 조종사",
+    image: "/images/scenario_art.png",
+    story: "우주 항해 중 미확인 행성을 발견했다. 착륙할 것인가?",
+    question: "당신의 결정은?",
+    options: [
+      { text: "매뉴얼을 확인하고 본부의 지시를 기다린다. (신중함)", type: "JP", value: "J" },
+      { text: "이건 운명이야! 당장 탐사선을 띄운다. (모험심)", type: "JP", value: "P" }
+    ]
   }
 ];
 

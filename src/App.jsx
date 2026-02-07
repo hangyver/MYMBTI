@@ -12,8 +12,11 @@ function App() {
     J: 0, P: 0
   });
   const [resultMBTI, setResultMBTI] = useState('');
+  const [questionList, setQuestionList] = useState(questions);
 
   const handleStart = () => {
+    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    setQuestionList(shuffled);
     setStep('quiz');
     setCurrentQuestionIndex(0);
     setScores({ E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 });
@@ -24,7 +27,7 @@ function App() {
     const newScores = { ...scores, [value]: scores[value] + 1 };
     setScores(newScores);
 
-    if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < questionList.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       calculateResult(newScores);
@@ -66,7 +69,7 @@ function App() {
              overflow: 'hidden'
            }}>
              <div style={{
-               width: `${((currentQuestionIndex + 1) / questions.length) * 100}%`,
+               width: `${((currentQuestionIndex + 1) / questionList.length) * 100}%`,
                height: '100%',
                background: 'var(--primary)',
                transition: 'width 0.3s ease'
@@ -74,7 +77,7 @@ function App() {
            </div>
            
            <img 
-             src={questions[currentQuestionIndex].image} 
+             src={questionList[currentQuestionIndex].image} 
              alt="Situation" 
              className="card-image"
            />
@@ -82,11 +85,11 @@ function App() {
            <h3 style={{color: 'var(--accent)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.9rem'}}>
              Scenario {currentQuestionIndex + 1}
            </h3>
-           <p className="story-text">{questions[currentQuestionIndex].story}</p>
-           <h2 className="question-text">{questions[currentQuestionIndex].question}</h2>
+           <p className="story-text">{questionList[currentQuestionIndex].story}</p>
+           <h2 className="question-text">{questionList[currentQuestionIndex].question}</h2>
            
            <div className="options-grid">
-             {questions[currentQuestionIndex].options.map((option, idx) => (
+             {questionList[currentQuestionIndex].options.map((option, idx) => (
                <button 
                  key={idx} 
                  className="option-btn"
