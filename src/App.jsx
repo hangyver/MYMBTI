@@ -15,8 +15,25 @@ function App() {
   const [questionList, setQuestionList] = useState(questions);
 
   const handleStart = () => {
-    const shuffled = [...questions].sort(() => Math.random() - 0.5);
-    setQuestionList(shuffled);
+    // 1. Group questions by type
+    const groups = { EI: [], SN: [], TF: [], JP: [] };
+    questions.forEach(q => {
+      // Find the type from the first option (assuming both options have the same type)
+      const type = q.options[0].type;
+      if (groups[type]) groups[type].push(q);
+    });
+
+    // 2. Pick 2 random questions from each group
+    let selectedQuestions = [];
+    ['EI', 'SN', 'TF', 'JP'].forEach(type => {
+      const shuffledGroup = [...groups[type]].sort(() => Math.random() - 0.5);
+      selectedQuestions.push(...shuffledGroup.slice(0, 2));
+    });
+
+    // 3. Shuffle the final list of 8 questions
+    selectedQuestions.sort(() => Math.random() - 0.5);
+
+    setQuestionList(selectedQuestions);
     setStep('quiz');
     setCurrentQuestionIndex(0);
     setScores({ E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 });
