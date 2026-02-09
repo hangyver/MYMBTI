@@ -262,6 +262,61 @@ export const questions = [
       { text: "매뉴얼을 확인하고 본부의 지시를 기다린다. (신중함)", type: "JP", value: "J" },
       { text: "이건 운명이야! 당장 탐사선을 띄운다. (모험심)", type: "JP", value: "P" }
     ]
+  },
+  {
+    id: 25,
+    title: "얼음 왕국",
+    image: "/images/scenario_frozen.png",
+    story: "당신은 얼음 마법을 쓸 수 있다. 나만의 얼음 성을 짓는다면 어떤 모습일까?",
+    question: "당신이 지을 성은?",
+    options: [
+      { text: "방어에 유리하고 난방 시스템이 완벽한 실용적인 요새. (현실감각)", type: "SN", value: "S" },
+      { text: "중력을 무시하는 크리스탈 계단과 하늘 닿는 탑! (환상적)", type: "SN", value: "N" }
+    ]
+  },
+  {
+    id: 26,
+    title: "우주 전쟁",
+    image: "/images/scenario_starwars.png",
+    story: "적의 우주 정거장에 잠입해야 한다. 작전 회의 중 의견이 갈린다.",
+    question: "당신의 작전 스타일은?",
+    options: [
+      { text: "플랜 A부터 Z까지, 모든 변수를 계산한 완벽한 계획을 짠다. (철저함)", type: "JP", value: "J" },
+      { text: "일단 잠입하고 상황 봐서 임기응변으로 대처한다! 포스가 함께하길. (융통성)", type: "JP", value: "P" }
+    ]
+  },
+  {
+    id: 27,
+    title: "최강 무술 대회",
+    image: "/images/scenario_dragonball.png",
+    story: "전 우주의 강자들이 모이는 무술 대회 결승전. 관중들의 함성 소리가 들린다.",
+    question: "경기장에 입장할 때 당신의 생각은?",
+    options: [
+      { text: "와! 분위기 뜨거운데? 이 관심을 즐기며 멋지게 등장한다! (외부 에너지)", type: "EI", value: "E" },
+      { text: "시끄럽군... 평정심을 유지하며 오직 상대에게만 집중한다. (내부 집중)", type: "EI", value: "I" }
+    ]
+  },
+  {
+    id: 28,
+    title: "오니 사냥꾼",
+    image: "/images/scenario_demon.png",
+    story: "동료가 임무 도중 큰 부상을 입었다.",
+    question: "가장 먼저 해야 할 일은?",
+    options: [
+      { text: "상처 부위를 확인하고 지혈한다. 치료가 우선이다. (문제 해결)", type: "TF", value: "T" },
+      { text: "괜찮아?! 정신 차려! 동료의 손을 잡고 안심시킨다. (정서적 지지)", type: "TF", value: "F" }
+    ]
+  },
+  {
+    id: 29,
+    title: "신비의 행성",
+    image: "/images/scenario_avatar.png",
+    story: "거대한 숲과 빛나는 식물들이 가득한 외계 행성. 비행 생물과 교감을 시도한다.",
+    question: "어떤 방식으로 교감할까?",
+    options: [
+      { text: "동공의 움직임, 호흡수 등 생물학적 반응을 살피며 조심스레 접근한다. (오감 관찰)", type: "SN", value: "S" },
+      { text: "서로의 영혼을 연결한다고 상상하며 마음의 소리를 듣는다. (영적 교감)", type: "SN", value: "N" }
+    ]
   }
 ];
 
