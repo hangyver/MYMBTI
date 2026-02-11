@@ -317,6 +317,94 @@ export const questions = [
       { text: "동공의 움직임, 호흡수 등 생물학적 반응을 살피며 조심스레 접근한다. (오감 관찰)", type: "SN", value: "S" },
       { text: "서로의 영혼을 연결한다고 상상하며 마음의 소리를 듣는다. (영적 교감)", type: "SN", value: "N" }
     ]
+  },
+  {
+    id: 30,
+    title: "픽셀 아트 신입사원",
+    image: "/images/scenario_pixel_office.png",
+    story: "도트 그래픽으로 이루어진 사무실에 첫 출근했다. 모든 것이 각진 세상, 선배가 다가와 말을 건다.",
+    question: "당신의 첫 반응은?",
+    options: [
+      { text: "큰 목소리로 활기차게 인사하며 내 존재감을 알린다! (E)", type: "EI", value: "E" },
+      { text: "어색하지 않게 눈만 마주치며 조용히 자리에 앉는다. (I)", type: "EI", value: "I" }
+    ]
+  },
+  {
+    id: 31,
+    title: "미니멀리즘 회의실",
+    image: "/images/scenario_minimal_meeting.png",
+    story: "선 하나로 표현된 단순한 회의실에서 아이디어 회의가 한창이다. 주제는 '신제품 컨셉'.",
+    question: "어떤 아이디어를 낼까?",
+    options: [
+      { text: "기존 제품의 단점을 보완한 실용적인 개선안을 제시한다. (S)", type: "SN", value: "S" },
+      { text: "지금까지 없었던, 세상을 바꿀 혁신적인 컨셉을 제안한다. (N)", type: "SN", value: "N" }
+    ]
+  },
+  {
+    id: 32,
+    title: "수채화풍 탕비실",
+    image: "/images/scenario_watercolor_pantry.png",
+    story: "은은한 물감으로 번진 듯한 탕비실. 동료가 커피를 쏟아 울상이 되어 있다.",
+    question: "당신의 위로 방식은?",
+    options: [
+      { text: "휴지를 건네며 닦는 것을 도와주고 해결책을 찾는다. (T)", type: "TF", value: "T" },
+      { text: "괜찮아? 안 다쳤어? 많이 놀랐겠다... (F)", type: "TF", value: "F" }
+    ]
+  },
+  {
+    id: 33,
+    title: "사이버펑크 야근",
+    image: "/images/scenario_cyberpunk_work.png",
+    story: "네온사인이 번쩍이는 미래 도시의 사무실. 프로젝트 마감까지 1시간 남았다.",
+    question: "당신의 업무 스타일은?",
+    options: [
+      { text: "미리 세워둔 타임라인에 맞춰 차근차근 마무리한다. (J)", type: "JP", value: "J" },
+      { text: "마감 직전의 아드레날린을 즐기며 폭발적으로 처리한다. (P)", type: "JP", value: "P" }
+    ]
+  },
+  {
+    id: 34,
+    title: "레트로 카툰 회식",
+    image: "/images/scenario_retro_dinner.png",
+    story: "8090 만화영화 스타일의 왁자지껄한 회식 자리. 건배사 제의가 들어왔다.",
+    question: "당신의 대처는?",
+    options: [
+      { text: "기회는 이때다! 유머러스한 건배사로 분위기를 주도한다. (E)", type: "EI", value: "E" },
+      { text: "주목받는 건 부담스러워... 최대한 짧고 무난하게 넘긴다. (I)", type: "EI", value: "I" }
+    ]
+  },
+  {
+    id: 35,
+    title: "3D 렌더링 워크샵",
+    image: "/images/scenario_3d_workshop.png",
+    story: "매끄러운 3D 그래픽으로 구현된 워크샵 장소 선정 회의. 어디가 좋을까?",
+    question: "당신의 선호는?",
+    options: [
+      { text: "시설 좋고 프로그램이 알찬 검증된 리조트 (S)", type: "SN", value: "S" },
+      { text: "영감을 줄 수 있는 독특하고 새로운 장소, 오지 탐험? (N)", type: "SN", value: "N" }
+    ]
+  },
+  {
+    id: 36,
+    title: "클레이 애니메이션 상사",
+    image: "/images/scenario_clay_boss.png",
+    story: "점토로 만든 듯한 둥글둥글한 상사가 내 기획안을 반려했다.",
+    question: "속으로 드는 생각은?",
+    options: [
+      { text: "어느 부분이 부족했을까? 논리적으로 분석해 본다. (T)", type: "TF", value: "T" },
+      { text: "열심히 했는데... 인정받지 못해서 서운하다. (F)", type: "TF", value: "F" }
+    ]
+  },
+  {
+    id: 37,
+    title: "고전 유화 점심시간",
+    image: "/images/scenario_classic_lunch.png",
+    story: "엄숙한 명화 속 주인공들이 점심 메뉴를 고르고 있다. '무엇을 드시겠소?'",
+    question: "당신의 선택 방식은?",
+    options: [
+      { text: "동선과 가격, 영양소를 고려해 미리 정해둔 식당으로 간다. (J)", type: "JP", value: "J" },
+      { text: "그날의 날씨와 기분에 따라 발길 닿는 곳으로 향한다. (P)", type: "JP", value: "P" }
+    ]
   }
 ];
 
